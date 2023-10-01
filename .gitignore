@@ -1,0 +1,7 @@
+# Ignore unminified JavaScript files
+*.js
+!*.min.js
+
+# Ignore unminified CSS files
+*.css
+!*.min.css
