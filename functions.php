@@ -4,6 +4,9 @@ function load_css()
 {
     wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '5.3.2', 'all');
     wp_enqueue_style('bootstrap');
+
+    wp_register_style('main', get_template_directory_uri() . '/css/main.css', array(), '1.0.0', 'all');
+    wp_enqueue_style('main');
 }
 add_action('wp_enqueue_scripts', 'load_css');
 
