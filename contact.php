@@ -6,10 +6,12 @@ Template Name: Contact
 
 <?php get_header(); ?>
 
-<h1><?php the_title(); ?></h1>
+<div class="container">
+    <h1><?php the_title(); ?></h1>
 
-<?php get_template_part('includes/section', 'content'); ?>
+    <?php get_template_part('includes/section', 'content'); ?>
 
-<h3>Contact info</h3>
+    <h3>Contact info</h3>
+</div>
 
 <?php get_footer(); ?>
