@@ -3,10 +3,23 @@
     --base-font-family: 'Open Sans', sans-serif;
     --base-font-weight: 400;
     --bold-font-weight: 600;
+    --base-font-size: 16px;
+    --secondary-font-size: 14px;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-accent: #f05041;
     --base-color: #000000;
+    --base-color-08: rgba(0, 0, 0, 0.8);
     --base-spacing: 20px;
     --half-spacing: calc(var(--base-spacing) / 2);
     --double-spacing: calc(var(--base-spacing) * 2);
+    --base-transition: 0.3s ease-out 0s;
+    --container-max-width: 800px;
+}
+
+/* Resets */
+body {
+    margin: 0;
 }
 
 /* Typography */
@@ -37,38 +50,90 @@ a {
     font-weight: var(--bold-font-weight);
 }
 
+h2 {
+    color: var(--color-accent);
+}
+
 p,
 span {
+    font-size: var(--base-font-size);
     font-weight: var(--base-font-weight);
 }
 
+a {
+    transition: color var(--base-transition);
+}
+
+a:hover {
+    color: var(--color-accent);
+}
+
 /* Navigation menus */
+.menu-header-nav-container {
+    background-color: var(--color-black);
+}
+
 .navbar-nav {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: var(--half-spacing) var(--base-spacing);
+    margin: 0 auto;
     display: flex;
+    justify-content: flex-end;
     gap: var(--base-spacing);
+    width: 100%;
+    max-width: var(--container-max-width);
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item > a {
+    font-size: var(--base-font-size);
+    line-height: 1;
+    color: var(--color-white);
+    padding: var(--base-spacing) var(--half-spacing);
+    text-decoration: none;
+}
+
+.menu-item > a:hover {
+    color: var(--color-accent);
 }
 
 .sub-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
     list-style: none;
-    padding: 0;
-    margin: var(--base-spacing) 0 0;
+    margin: 28px 0 0 -10px;
+    padding: var(--half-spacing);
     display: flex;
     flex-direction: column;
-    gap: var(--base-spacing);
+    gap: var(--half-spacing);
+    background-color: var(--base-color-08);
+    min-width: 180px;
 }
 
-.menu-item a {
-    color: var(--base-color);
+.sub-menu a {
+    color: var(--color-white);
     text-decoration: none;
+    font-size: var(--secondary-font-size);
+    line-height: 1;
+}
+
+.sub-menu > a:hover {
+    color: var(--color-accent);
 }
 
 /* Layout */
 .container {
-    margin: var(--double-spacing) auto;
-    padding: 0 var(--base-spacing);
+    margin: 0 auto;
+    padding: var(--base-spacing);
     width: 100%;
-    max-width: 1200px;
+    max-width: var(--container-max-width);
+}
+
+/* Responsive */
+@media only screen and (min-width: 738px) {
+
 }

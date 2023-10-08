@@ -10,13 +10,12 @@
 </head>
 <body>
     <header>
-        <nav class="container">            
-            <?php
-                wp_nav_menu(
-                    array(
-                        'theme_location' => 'header-nav',
-                        'menu_class' => 'navbar-nav'
-                    )
-                );
-            ?></nav>
+        <?php
+            wp_nav_menu(
+                array(
+                    'theme_location' => 'header-nav',
+                    'menu_class' => 'navbar-nav'
+                )
+            );
+        ?>
     </header>
