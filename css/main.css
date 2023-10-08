@@ -1,10 +1,74 @@
-
-/* Header styles */
-
-.navbar-collapse {
-    justify-content: flex-end;
+/* Variables */
+:root {
+    --base-font-family: 'Open Sans', sans-serif;
+    --base-font-weight: 400;
+    --bold-font-weight: 600;
+    --base-color: #000000;
+    --base-spacing: 20px;
+    --half-spacing: calc(var(--base-spacing) / 2);
+    --double-spacing: calc(var(--base-spacing) * 2);
 }
 
+/* Typography */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+b,
+strong,
+a {
+    font-family: var(--base-font-family);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong,
+a {
+    font-weight: var(--bold-font-weight);
+}
+
+p,
+span {
+    font-weight: var(--base-font-weight);
+}
+
+/* Navigation menus */
 .navbar-nav {
-    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: var(--base-spacing);
+}
+
+.sub-menu {
+    list-style: none;
+    padding: 0;
+    margin: var(--base-spacing) 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--base-spacing);
+}
+
+.menu-item a {
+    color: var(--base-color);
+    text-decoration: none;
+}
+
+/* Layout */
+.container {
+    margin: var(--double-spacing) auto;
+    padding: 0 var(--base-spacing);
+    width: 100%;
+    max-width: 1200px;
 }
