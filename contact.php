@@ -6,7 +6,7 @@ Template Name: Contact
 
 <?php get_header(); ?>
 
-<div class="container">
+<div class="container --contact">
     <h1><?php the_title(); ?></h1>
 
     <?php get_template_part('includes/section', 'content'); ?>

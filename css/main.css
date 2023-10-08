@@ -1,0 +1,10 @@
+
+/* Header styles */
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-nav {
+    gap: 20px;
+}
