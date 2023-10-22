@@ -5,11 +5,13 @@
     --bold-font-weight: 600;
     --base-font-size: 16px;
     --secondary-font-size: 14px;
-    --color-black: #000000;
+    --color-black: #0d1213;
     --color-white: #ffffff;
-    --color-accent: #f05041;
+    --color-accent-1: #f05041;
+    --color-accent-2: #9c372e;
+    --color-accent-3: #582522;
+    --color-accent-4: #45221c;
     --base-color: #000000;
-    --base-color-08: rgba(0, 0, 0, 0.8);
     --base-spacing: 20px;
     --half-spacing: calc(var(--base-spacing) / 2);
     --double-spacing: calc(var(--base-spacing) * 2);
@@ -51,7 +53,7 @@ a {
 }
 
 h2 {
-    color: var(--color-accent);
+    color: var(--color-accent-1);
 }
 
 p,
@@ -65,18 +67,21 @@ a {
 }
 
 a:hover {
-    color: var(--color-accent);
+    color: var(--color-accent-1);
 }
 
 /* Navigation menus */
-.menu-header-nav-container {
+.menu-header-navigation-container {
     background-color: var(--color-black);
+}
+
+.menu-footer-navigation-container {
+    background-color: var(--color-accent-3);
 }
 
 .header-nav,
 .footer-nav {
     list-style: none;
-    padding: var(--half-spacing) 0;
     margin: 0 auto;
     display: flex;
     gap: var(--base-spacing);
@@ -86,10 +91,12 @@ a:hover {
 
 .header-nav {
     justify-content: flex-end;
+    padding: var(--half-spacing) 0;
 }
 
 .footer-nav {
     flex-direction: column;
+    padding: var(--double-spacing) 0;
 }
 
 .menu-item {
@@ -104,7 +111,7 @@ a:hover {
 }
 
 .menu-item > a:hover {
-    color: var(--color-accent);
+    color: var(--color-accent-1);
 }
 
 .sub-menu {
@@ -117,8 +124,16 @@ a:hover {
     display: flex;
     flex-direction: column;
     gap: var(--half-spacing);
-    background-color: var(--base-color-08);
+    background-color: var(--color-accent-3);
     min-width: 180px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility var(--base-transition), opacity var(--base-transition);
+}
+
+.menu-item-has-children:hover .sub-menu {
+    visibility: visible;
+    opacity: 1;
 }
 
 .sub-menu a {
@@ -129,7 +144,7 @@ a:hover {
 }
 
 .sub-menu > a:hover {
-    color: var(--color-accent);
+    color: var(--color-accent-1);
 }
 
 /* Layout */
