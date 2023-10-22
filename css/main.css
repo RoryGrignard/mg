@@ -73,15 +73,23 @@ a:hover {
     background-color: var(--color-black);
 }
 
-.navbar-nav {
+.header-nav,
+.footer-nav {
     list-style: none;
-    padding: var(--half-spacing) var(--base-spacing);
+    padding: var(--half-spacing) 0;
     margin: 0 auto;
     display: flex;
-    justify-content: flex-end;
     gap: var(--base-spacing);
     width: 100%;
     max-width: var(--container-max-width);
+}
+
+.header-nav {
+    justify-content: flex-end;
+}
+
+.footer-nav {
+    flex-direction: column;
 }
 
 .menu-item {
@@ -92,7 +100,6 @@ a:hover {
     font-size: var(--base-font-size);
     line-height: 1;
     color: var(--color-white);
-    padding: var(--base-spacing) var(--half-spacing);
     text-decoration: none;
 }
 
@@ -126,6 +133,20 @@ a:hover {
 }
 
 /* Layout */
+html, body {
+    height: 100%;
+}
+
+html {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .container {
     margin: 0 auto;
     padding: var(--base-spacing);
