@@ -1,6 +1,8 @@
 /* Variables */
 :root {
-    --base-font-family: 'Open Sans', sans-serif;
+    --heading-font-family: 'Playfair Display', sans-serif;
+    --base-font-family: 'Poppins', sans-serif;
+    --heading-font-weight: 400;
     --base-font-weight: 400;
     --bold-font-weight: 600;
     --base-font-size: 16px;
@@ -32,7 +34,11 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+}
+
 p,
 span,
 b,
@@ -41,15 +47,8 @@ a {
     font-family: var(--base-font-family);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 b,
-strong,
-a {
+strong {
     font-weight: var(--bold-font-weight);
 }
 
@@ -100,6 +99,10 @@ a:hover {
     padding: var(--double-spacing) 0;
 }
 
+.footer-nav .menu-item > a:hover {
+color: var(--color-accent-1);
+}
+
 .menu-item {
     position: relative;
 }
@@ -144,7 +147,7 @@ a:hover {
     line-height: 1;
 }
 
-.sub-menu > a:hover {
+.sub-menu .menu-item > a:hover {
     color: var(--color-accent-1);
 }
 
