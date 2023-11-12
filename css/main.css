@@ -5,12 +5,13 @@
     --bold-font-weight: 600;
     --base-font-size: 16px;
     --secondary-font-size: 14px;
-    --color-black: #0d1213;
-    --color-white: #ffffff;
-    --color-accent-1: #f05041;
-    --color-accent-2: #9c372e;
-    --color-accent-3: #582522;
-    --color-accent-4: #45221c;
+    --color-black: #4a4a4a;
+    --color-white: #fff;
+    --color-accent-1: #6C32A6;
+    --color-accent-2: #58328C;
+    --color-accent-3: #04B2D9;
+    --color-accent-4: #03A6A6;
+    --color-accent-5: #efe7dc;
     --base-color: #000000;
     --base-spacing: 20px;
     --half-spacing: calc(var(--base-spacing) / 2);
@@ -72,11 +73,11 @@ a:hover {
 
 /* Navigation menus */
 .menu-header-navigation-container {
-    background-color: var(--color-black);
+    background-color: var(--color-white);
 }
 
 .menu-footer-navigation-container {
-    background-color: var(--color-accent-3);
+    background-color: var(--color-accent-5);
 }
 
 .header-nav,
@@ -106,12 +107,12 @@ a:hover {
 .menu-item > a {
     font-size: var(--base-font-size);
     line-height: 1;
-    color: var(--color-white);
+    color: var(--color-black);
     text-decoration: none;
 }
 
 .menu-item > a:hover {
-    color: var(--color-accent-1);
+    color: var(--color-accent-4);
 }
 
 .sub-menu {
@@ -124,7 +125,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     gap: var(--half-spacing);
-    background-color: var(--color-accent-3);
+    background-color: var(--color-accent-5);
     min-width: 180px;
     visibility: hidden;
     opacity: 0;
@@ -137,7 +138,7 @@ a:hover {
 }
 
 .sub-menu a {
-    color: var(--color-white);
+    color: var(--color-black);
     text-decoration: none;
     font-size: var(--secondary-font-size);
     line-height: 1;
