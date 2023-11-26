@@ -1,5 +1,5 @@
     
-    <footer>
+    <footer class="footer">
         <?php
             wp_nav_menu(
                 array(
@@ -9,6 +9,9 @@
             );
         ?>
         <?php wp_footer(); ?>
+        <small class="footer__copyright">
+            &copy; <?php echo date('Y'); ?> Michelle Grignard
+        </small>
     </footer>
     </body>
 </html>
