@@ -35,7 +35,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+time {
     font-family: var(--heading-font-family);
     font-weight: var(--heading-font-weight);
 }
@@ -53,13 +54,20 @@ strong {
     font-weight: var(--bold-font-weight);
 }
 
+h1,
 h2,
 h3 {
     color: var(--color-1);
 }
 
+h4,
+time {
+    color: var(--color-4);
+}
+
 p,
-span {
+span,
+time {
     font-size: var(--base-font-size);
     font-weight: var(--base-font-weight);
 }

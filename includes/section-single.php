@@ -1,4 +1,8 @@
-<?php if( have_posts() ): while( have_posts() ): the_post(); ?>`
+<?php if( have_posts() ): while( have_posts() ): the_post(); ?>
+    <time datetime="<?php echo get_the_date(DATE_W3C); ?>">
+        <?php echo get_the_date('l, jS F, Y'); ?>
+    </time>
+
     <?php the_content(); ?>
 
     <?php
