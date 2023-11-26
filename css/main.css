@@ -102,7 +102,7 @@ a:hover {
 }
 
 .footer-nav .menu-item > a:hover {
-color: var(--color-1);
+    color: var(--color-1);
 }
 
 .menu-item {
@@ -182,13 +182,24 @@ body {
     font-size: 2em;
 }
 
-.archive__link {
+.archive__pagination {
+    border-top: 1px solid var(--color-black);
+    margin: 20px 0 0;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.archive__link,
+.archive__pagination a {
     font-family: var(--heading-font-family);
     color: var(--color-black);
 }
 
-.archive__link:hover {
-    color: var(--color-1);
+.archive__link:hover,
+.archive__pagination a:hover {
+    color: var(--color-4);
 }
 
 /* Responsive */
