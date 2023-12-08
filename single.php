@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="container --single">
+<div class="container single">
     <h1><?php the_title(); ?></h1>
 
     <?php get_template_part('includes/section', 'single'); ?>
