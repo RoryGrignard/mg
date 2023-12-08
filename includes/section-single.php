@@ -12,11 +12,25 @@
 
     <h4>Author: <?php echo $first_name; ?> <?php echo $last_name; ?></h4>
 
+    <h5>Categories</h5>
+
+    <?php
+    $categories = get_the_category();
+    if($categories):
+        foreach($categories as $cat): ?>
+            <a href="<?php echo get_category_link($cat->term_id); ?>" class="pill">
+                <?php echo $cat->name; ?>
+            </a>
+        <?php endforeach; ?>
+    <?php endif; ?>
+
+    <h5>Tags</h5>
+
     <?php
     $tags = get_the_tags();
     if($tags):
         foreach($tags as $tag): ?>
-            <a href="<?php echo get_tag_link($tag->term_id); ?>" class="single__tag">
+            <a href="<?php echo get_tag_link($tag->term_id); ?>" class="pill">
                 <?php echo $tag->name; ?>
             </a>
         <?php endforeach; ?>
