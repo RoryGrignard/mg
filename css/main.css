@@ -19,7 +19,7 @@
     --base-spacing: 20px;
     --half-spacing: calc(var(--base-spacing) / 2);
     --double-spacing: calc(var(--base-spacing) * 2);
-    --base-transition: 0.3s ease-out 0s;
+    --base-transition: 0.3s ease-in 0s;
     --container-max-width: 800px;
 }
 
@@ -219,6 +219,22 @@ body {
 .archive__link:hover,
 .archive__pagination a:hover {
     color: var(--color-4);
+}
+
+/* Single */
+.single__tag {
+    background-color: transparent;
+    border: 1px solid var(--color-black);
+    border-radius: 5px;
+    color: var(--color-black);
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: background-color var(--base-transition), color var(--base-transition);
+}
+
+.single__tag:hover {
+    color: var(--color-white);
+    background-color: var(--color-black);
 }
 
 /* Responsive */
