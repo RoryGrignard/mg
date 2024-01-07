@@ -40,4 +40,6 @@
         <?php endif; ?>
     </div>
 
+    <?php comments_template(); ?>
+
 <?php endwhile; endif; ?>
