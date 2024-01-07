@@ -1,3 +1,2 @@
-# Ignore unminified JavaScript files
-*.js
-!*.min.js
+node_modules/
+dist/
