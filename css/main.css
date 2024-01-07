@@ -196,11 +196,6 @@ body {
 }
 
 /* Archive */
-
-.archive__heading {
-    font-size: 2em;
-}
-
 .archive__pagination {
     border-top: 1px solid var(--color-black);
     margin: 20px 0 0;
@@ -222,6 +217,12 @@ body {
 }
 
 /* Pill */
+.pill-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--half-spacing);
+}
+
 .pill {
     background-color: transparent;
     border: 1px solid var(--color-black);
