@@ -4,7 +4,8 @@
   "description": "Michelle Grignard's custom Wordpress theme",
   "main": "main.js",
   "scripts": {
-    "build": "postcss src/styles.css -o dist/styles.css"
+    "dev": "onchange \"src/**/*.css\" -- postcss src/css/styles.css -o dist/css/styles.css",
+    "build": "cross-env NODE_ENV=production postcss src/css/styles.css -o dist/css/styles.css"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,9 @@
     "tailwindcss": "^3.4.1"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
+    "cssnano": "^6.0.3",
+    "onchange": "^7.1.0",
     "postcss-cli": "^11.0.0"
   }
 }
