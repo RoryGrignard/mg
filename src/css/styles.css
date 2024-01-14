@@ -35,17 +35,20 @@ a:hover {
 
 /* Navigation menus */
 
-.header-nav,
-.footer-nav {
-    @apply mx-auto flex gap-5 w-full max-w-screen-lg;
-}
-
 .header-nav {
-    @apply justify-end py-2.5;
+    @apply mx-auto p-5 w-full max-w-screen-lg;
+}
+
+.header-nav > ul {
+    @apply flex justify-end gap-5;
 }
 
 .footer-nav {
-    @apply flex-col py-10;
+    @apply mx-auto p-10 w-full max-w-screen-lg;
+}
+
+.footer-nav > ul {
+    @apply flex flex-col gap-2.5;
 }
 
 .footer-nav .menu-item > a:hover {
