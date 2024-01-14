@@ -1,5 +1,5 @@
     
-    <footer class="footer">
+    <footer class="footer bg-dawnPink">
         <?php
             wp_nav_menu(
                 array(
@@ -9,7 +9,7 @@
             );
         ?>
         <?php wp_footer(); ?>
-        <small class="footer__copyright">
+        <small class="border-t border-black flex justify-center mx-auto max-w-1024 py-5">
             &copy; <?php echo date('Y'); ?> Michelle Grignard
         </small>
     </footer>

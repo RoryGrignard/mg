@@ -6,7 +6,6 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        white: '#FFF',
         tundora: '#4A4A4A',
         royalPurple: '#6C32A6',
         gigas: '#58328C',
@@ -20,7 +19,7 @@ module.exports = {
         serif: ['Poppins', 'sans-serif'],
         heading: ['"Playfair Display"', 'sans-serif'],
       }
-    },
+    }
   },
   plugins: [],
 }

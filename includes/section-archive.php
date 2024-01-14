@@ -10,5 +10,5 @@
 
     <?php the_excerpt(); ?>
 
-    <a class="archive__link" href="<?php the_permalink(); ?>">Read more</a>
+    <a class="font-heading" href="<?php the_permalink(); ?>">Read more</a>
 <?php endwhile; endif; ?>
